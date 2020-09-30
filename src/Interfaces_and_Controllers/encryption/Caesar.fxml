@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="360.0" prefWidth="630.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="Interfaces_and_Controllers.encryption.CaesarController">
+    <children>
+        <Label layoutX="438.0" layoutY="98.0" prefHeight="25.0" prefWidth="119.0" text="Encrypted Text">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="78.0" layoutY="98.0" prefHeight="25.0" prefWidth="100.0" text="Plain Text">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="197.0" layoutY="35.0" prefHeight="40.0" prefWidth="220.0" text="Caesar Encryption" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="Backtomain" layoutX="24.0" layoutY="35.0" mnemonicParsing="false" onAction="#handlebacktomain" prefHeight="35.0" prefWidth="160.0" text="🢀 Back to Program">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Button>
+        <TextArea fx:id="plainText" layoutX="24.0" layoutY="123.0" prefHeight="200.0" prefWidth="207.0" />
+        <TextArea fx:id="EncryptedText" layoutX="394.0" layoutY="123.0" prefHeight="200.0" prefWidth="207.0" />
+        <Button layoutX="262.0" layoutY="171.0" mnemonicParsing="false" onAction="#Encrypt_text" prefHeight="25.0" prefWidth="100.0" text="Encrypt ⤇">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="258.0" layoutY="245.0" mnemonicParsing="false" onAction="#Decrypt_text" prefHeight="25.0" prefWidth="100.0" text="⤆ Decrypt">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

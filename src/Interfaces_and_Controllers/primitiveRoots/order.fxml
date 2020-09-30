@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="220.0" prefWidth="470.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces_and_Controllers.primitiveRoots.OrderController">
+    <children>
+        <Label layoutX="36.0" layoutY="90.0" prefHeight="55.0" prefWidth="200.0" text="|                     |">
+            <font>
+                <Font name="Arabic Typesetting" size="40.0" />
+            </font>
+        </Label>
+        <Button fx:id="Backtomain" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#handlebacktomain" prefHeight="35.0" prefWidth="160.0" text="🢀 Back to Program">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="183.0" layoutY="23.0" prefHeight="40.0" prefWidth="160.0" text="Compute Order" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="a" layoutX="43.0" layoutY="106.0" prefHeight="30.0" prefWidth="170.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Button layoutX="200.0" layoutY="168.0" mnemonicParsing="false" onAction="#handlegetorder" prefHeight="25.0" prefWidth="100.0" text="Compute" />
+        <Label layoutX="275.0" layoutY="109.0" text="=">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="Result" editable="false" layoutX="291.0" layoutY="106.0" prefHeight="30.0" prefWidth="160.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="n" layoutX="223.0" layoutY="136.0" prefHeight="25.0" prefWidth="50.0">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>

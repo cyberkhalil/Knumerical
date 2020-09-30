@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="375.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces_and_Controllers.main_Interfaces.NumTheoryFXMLController">
+    <children>
+        <Button fx:id="about" layoutX="19.0" layoutY="341.0" onAction="#handleAboutAction" prefHeight="23.0" prefWidth="49.0" text="about" textFill="#c90c0c">
+            <font>
+                <Font name="Arial Black" size="10.0" />
+            </font>
+        </Button>
+        <Label fx:id="topic" layoutX="170.0" layoutY="20.0" prefHeight="39.0" prefWidth="200.0" text="Number Theory Program" textAlignment="CENTER" textFill="#00308a" wrapText="true">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TitledPane fx:id="tp_Chinese" alignment="CENTER" expanded="false" layoutX="19.0" layoutY="275.0" prefHeight="50.0" prefWidth="150.0" text="Chinese">
+            <content>
+                <Pane prefHeight="144.0" prefWidth="146.0">
+                    <children>
+                        <Button cancelButton="true" mnemonicParsing="false" onAction="#openSolveChinese" prefHeight="25.0" prefWidth="149.0" text="Solve Chinese" />
+                    </children>
+                </Pane>
+            </content>
+        </TitledPane>
+        <TitledPane fx:id="tp_τ_σ" alignment="CENTER" expanded="false" layoutX="194.0" layoutY="275.0" prefHeight="100.0" prefWidth="150.0" text="τ &amp; σ &amp; 𝜙">
+            <content>
+                <Pane prefHeight="144.0" prefWidth="146.0">
+                    <children>
+                        <Button layoutY="50.0" mnemonicParsing="false" onAction="#openGetPhi" prefHeight="25.0" prefWidth="149.0" text="get 𝜙 (phi)" />
+                        <Button cancelButton="true" mnemonicParsing="false" onAction="#openGetTau" prefHeight="25.0" prefWidth="149.0" text="get τ (tau)" />
+                        <Button layoutY="25.0" mnemonicParsing="false" onAction="#openGetSigma" prefHeight="25.0" prefWidth="149.0" text="get σ (sigma)" />
+                    </children>
+                </Pane>
+            </content>
+        </TitledPane>
+        <TitledPane alignment="CENTER" expanded="false" layoutX="358.0" layoutY="175.0" prefHeight="100.0" prefWidth="160.0" text="Primitive Roots">
+            <content>
+                <Pane prefHeight="0.0" prefWidth="0.0">
+                    <children>
+                        <Button cancelButton="true" mnemonicParsing="false" onAction="#openNumOfPrimitiveRoots" prefHeight="25.0" prefWidth="159.0" text="Number of primitive roots" />
+                        <Button cancelButton="true" layoutY="25.0" mnemonicParsing="false" onAction="#openPrimitiveroots" prefHeight="25.0" prefWidth="159.0" text="Find Primitive roots" />
+                        <Button cancelButton="true" layoutY="50.0" mnemonicParsing="false" onAction="#Computetheorder" prefHeight="25.0" prefWidth="159.0" text="Compute the order" />
+                    </children>
+                </Pane>
+            </content>
+        </TitledPane>
+        <TitledPane fx:id="tp_Mod" alignment="CENTER" expanded="false" layoutX="194.0" layoutY="175.0" prefHeight="100.0" prefWidth="150.0" text="Modulo">
+            <content>
+                <Pane prefHeight="150.0" prefWidth="150.0">
+                    <children>
+                        <Button cancelButton="true" mnemonicParsing="false" onAction="#openModulo" prefHeight="25.0" prefWidth="149.0" text="Modulo" />
+                        <Button cancelButton="true" layoutY="25.0" mnemonicParsing="false" onAction="#openIsCongurent" prefHeight="25.0" prefWidth="149.0" text="Is Congurent ?" />
+                        <Button layoutY="50.0" mnemonicParsing="false" onAction="#openSolveLinearCongurent" prefHeight="25.0" prefWidth="149.0" text="Solve linear Congurent" />
+                    </children>
+                </Pane>
+            </content>
+        </TitledPane>
+        <TitledPane fx:id="tp_Encrypt" alignment="CENTER" expanded="false" layoutX="363.0" layoutY="275.0" prefHeight="50.0" prefWidth="150.0" text="Encryption">
+            <content>
+                <Pane prefHeight="144.0" prefWidth="146.0">
+                    <children>
+                        <Button cancelButton="true" mnemonicParsing="false" onAction="#openCaesar" prefHeight="25.0" prefWidth="149.0" text="Caesar encryption" />
+                    </children>
+                </Pane>
+            </content>
+        </TitledPane>
+        <TitledPane fx:id="tp_GCD" alignment="CENTER" cache="true" expanded="false" layoutX="188.0" layoutY="75.0" prefHeight="100.0" prefWidth="160.0" text="GCD">
+            <content>
+                <Pane prefHeight="144.0" prefWidth="160.0">
+                    <children>
+                        <Button layoutY="50.0" mnemonicParsing="false" onAction="#openGcdAsLinearCombination" prefHeight="25.0" prefWidth="159.0" text="gcd as linear combination" />
+                        <Button layoutY="25.0" mnemonicParsing="false" onAction="#openLcm" prefHeight="25.0" prefWidth="159.0" text="lcm" />
+                        <Button mnemonicParsing="false" onAction="#openGcd" prefHeight="25.0" prefWidth="159.0" text="gcd" />
+                    </children>
+                </Pane>
+            </content>
+        </TitledPane>
+        <TitledPane fx:id="tp_Primes" alignment="CENTER" expanded="false" layoutX="363.0" layoutY="75.0" prefHeight="100.0" prefWidth="150.0" text="Primes">
+            <content>
+                <Pane prefHeight="144.0" prefWidth="146.0">
+                    <children>
+                        <Button cancelButton="true" mnemonicParsing="false" onAction="#openIsPrime" prefHeight="25.0" prefWidth="149.0" text="Is prime ?" />
+                        <Button layoutY="25.0" mnemonicParsing="false" onAction="#openIsRelativePrime" prefHeight="25.0" prefWidth="149.0" text="Is Relative Prime ?" />
+                        <Button layoutY="50.0" mnemonicParsing="false" onAction="#openPrimeDivisors" prefHeight="25.0" prefWidth="149.0" text="Prime Divisors" />
+                    </children>
+                </Pane>
+            </content>
+        </TitledPane>
+        <TitledPane fx:id="tp_Dioph" alignment="CENTER" contentDisplay="CENTER" expanded="false" layoutX="19.0" layoutY="175.0" prefHeight="75.0" prefWidth="150.0" text="Diophantine">
+            <content>
+                <Pane prefHeight="144.0" prefWidth="146.0">
+                    <children>
+                        <Button cancelButton="true" mnemonicParsing="false" onAction="#openSolveDiophantine" prefHeight="25.0" prefWidth="149.0" text="Solve Diophantine" />
+                        <Button layoutY="25.0" mnemonicParsing="false" onAction="#openDivisionAlgorithm" prefHeight="25.0" prefWidth="149.0" text="Division Algorithm" />
+                    </children>
+                </Pane>
+            </content>
+        </TitledPane>
+        <TitledPane fx:id="tp_Divisors" alignment="CENTER" contentDisplay="CENTER" expanded="false" layoutX="19.0" layoutY="75.0" prefHeight="100.0" prefWidth="150.0" text="Divisors">
+            <content>
+                <Pane prefHeight="100.0" prefWidth="148.0">
+                    <children>
+                        <Button fx:id="AllDivisorsbtn" cancelButton="true" mnemonicParsing="false" onAction="#openAllDivisors" prefHeight="25.0" prefWidth="149.0" text="All Divisors" />
+                        <Button layoutY="25.0" mnemonicParsing="false" onAction="#openPrimeDivisors" prefHeight="25.0" prefWidth="149.0" text="Prime Divisors" />
+                        <Button layoutY="50.0" mnemonicParsing="false" onAction="#openPrimeFactorizations" prefHeight="25.0" prefWidth="149.0" text="Prime Facorization" />
+                    </children>
+                </Pane>
+            </content>
+        </TitledPane>
+    </children>
+</AnchorPane>

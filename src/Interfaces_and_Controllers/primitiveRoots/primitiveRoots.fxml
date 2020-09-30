@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="560.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces_and_Controllers.primitiveRoots.PrimitiveRootsController">
+    <children>
+        <Button fx:id="Backtomain" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#handlebacktomain" prefHeight="35.0" prefWidth="160.0" text="🢀 Back to Program">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="210.0" layoutY="14.0" prefHeight="40.0" prefWidth="199.0" text="Find Primitive roots" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="Result" editable="false" layoutX="336.0" layoutY="83.0" prefHeight="170.0" prefWidth="200.0" wrapText="true" />
+        <TextField fx:id="Input" layoutX="154.0" layoutY="129.0" prefHeight="30.0" prefWidth="150.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Button layoutX="129.0" layoutY="183.0" mnemonicParsing="false" onAction="#handlePrimitiveroots" prefHeight="25.0" prefWidth="100.0" text="Find" />
+        <Label layoutX="308.0" layoutY="136.0" text="are">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="10.0" layoutY="136.0" text="The primitive roots of : ">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

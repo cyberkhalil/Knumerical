@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces_and_Controllers.chinese.SolveChinese">
+    <children>
+        <Button fx:id="Backtomain" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#handlebacktomain" prefHeight="35.0" prefWidth="160.0" text="🢀 Back to Program">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="188.0" layoutY="23.0" prefHeight="40.0" prefWidth="230.0" text="Solve Chinese" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="231.0" layoutY="201.0" mnemonicParsing="false" onAction="#handlesolvechinese" prefHeight="25.0" prefWidth="100.0" text="Solve " />
+        <TextField fx:id="Result" editable="false" layoutX="375.0" layoutY="199.0" prefHeight="30.0" prefWidth="160.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextArea fx:id="Input" layoutX="21.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" />
+        <Label layoutX="33.0" layoutY="89.0" prefHeight="21.0" prefWidth="138.0" text="Enter with syntax as">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="109.0" text="a  n  {such that X ≡ a (mod n)}">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="338.0" layoutY="204.0" prefHeight="20.0" prefWidth="30.0" text="X =">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

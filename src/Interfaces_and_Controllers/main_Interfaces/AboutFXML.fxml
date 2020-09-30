@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="330.0" prefWidth="520.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="Interfaces_and_Controllers.main_Interfaces.AboutFXMLController">
+    <children>
+        <Button fx:id="Backtomain" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#handlebacktomain" prefHeight="35.0" prefWidth="160.0" text="🢀 Back to Program">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Button>
+        <Hyperlink alignment="CENTER" layoutX="143.0" layoutY="221.0" onAction="#handleopengithublink" text="git hub" />
+        <Label layoutX="9.0" layoutY="80.0" prefHeight="30.0" prefWidth="400.0" text="Copyright (C) 2017 Waleed Mortaja, Mahmoud Khalil." wrapText="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="110.0" prefHeight="90.0" prefWidth="494.0" text="This program is free software: Selling this product is considered a deception you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version." wrapText="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="54.0" layoutY="284.0" text="contacts :">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Hyperlink layoutX="125.0" layoutY="273.0" prefHeight="23.0" prefWidth="230.0" text="Mahmoud Khalil : khalil2535@yahoo.com" />
+        <Hyperlink layoutX="125.0" layoutY="293.0" prefHeight="23.0" prefWidth="251.0" text="Waleed Mortaja : waleed.mortaja@gmail.com" />
+        <Label layoutX="29.0" layoutY="222.0" text="project link on :">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
