@@ -1,14 +1,14 @@
-# Elementary-Number-Theory-Program [![Build Status](https://travis-ci.org/WaleedMortaja/Elementary-Number-Theory.svg)](https://travis-ci.org/WaleedMortaja/Elementary-Number-Theory)
+# Knumerical [![Build Status](https://travis-ci.org/khalil2535/Knumerical.svg)](https://travis-ci.org/khalil2535/Knumerical)
 
 <h2>About program</h2>
 
-<h4>This open source program contains alot of Number Theory methods from book (ELEMENTARY NUMBER THEORY Sixth Edition)</h4>
+<h4>Knumerical is a free software application that conatins alot of important number theory functions. the number theory quations depends what we learned from the book (ELEMENTARY NUMBER THEORY Sixth Edition). This program is forked from another project called Elementary-Number-Theory.</h4>
 
 <hr>
 
 <h2>About Licenses</h2>
 
-<h4>This program is free software: Selling this product is considered a deception you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</h4>
+<h4>This program is a free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</h4>
 
 <hr>
 
@@ -23,14 +23,4 @@
   
   <tr> <td>Prime Factorization</td> <td>GCD as linear combination</td> <td></td> <td></td>  <td>Solve Linear Congurent</td> <td></td> <td></td> <td>Tau(τ)</td> <td>Primitive Roots</td> </tr>
 
-</table>
-
-<hr>
-
-<h2>Program Authors</h2>
-
-<table>
-  <tr><th>Author</th><th>Email</th></tr>
-  <tr><td>Waleed Mortaja (Waleed)</td><td><a href="mailto:waleedmortaja@gmail.com">waleedmortaja@gmail.com</a></td></tr>
-  <tr><td>Mahmoud Khalil (khalil2535)</td><td><a href="mailto:kkhalil2535@gmail.com">kkhalil2535@gmail.com</a></td></tr>
 </table>
