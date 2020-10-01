@@ -1,4 +1,4 @@
-# Knumerical [![Build Status](https://travis-ci.org/khalil2535/Knumerical.svg)](https://travis-ci.org/khalil2535/Knumerical)
+# Knumerical [![Build Status](https://travis-ci.com/khalil2535/Knumerical.svg?branch=master)](https://travis-ci.com/khalil2535/Knumerical)
 
 <h2>About program</h2>
 
