@@ -1,6 +1,6 @@
 dist: trusty
 language: java
-install: ant deps
+install: ant
 jdk:
   - oraclejdk8
   - openjdk8
