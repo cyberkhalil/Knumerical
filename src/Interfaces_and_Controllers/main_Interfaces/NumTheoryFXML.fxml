@@ -7,14 +7,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="375.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces_and_Controllers.main_Interfaces.NumTheoryFXMLController">
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="375.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces_and_Controllers.main_Interfaces.NumTheoryFXMLController">
     <children>
         <Button fx:id="about" layoutX="19.0" layoutY="341.0" onAction="#handleAboutAction" prefHeight="23.0" prefWidth="49.0" text="about" textFill="#c90c0c">
             <font>
                 <Font name="Arial Black" size="10.0" />
             </font>
         </Button>
-        <Label fx:id="topic" layoutX="170.0" layoutY="20.0" prefHeight="39.0" prefWidth="200.0" text="Number Theory Program" textAlignment="CENTER" textFill="#00308a" wrapText="true">
+        <Label fx:id="topic" alignment="CENTER" layoutX="170.0" layoutY="20.0" prefHeight="39.0" prefWidth="200.0" text="Knumerical" textAlignment="CENTER" textFill="#00308a" wrapText="true">
             <font>
                 <Font size="18.0" />
             </font>

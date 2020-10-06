@@ -14,12 +14,12 @@
             </font>
         </Button>
         <Hyperlink alignment="CENTER" layoutX="143.0" layoutY="221.0" onAction="#handleopengithublink" text="git hub" />
-        <Label layoutX="9.0" layoutY="80.0" prefHeight="30.0" prefWidth="400.0" text="Copyright (C) 2017 Waleed Mortaja, Mahmoud Khalil." wrapText="true">
+        <Label layoutX="9.0" layoutY="80.0" prefHeight="30.0" prefWidth="400.0" text="Copyright (C) 2020 Mahmoud Khalil." wrapText="true">
             <font>
                 <Font size="14.0" />
             </font>
         </Label>
-        <Label layoutX="17.0" layoutY="110.0" prefHeight="90.0" prefWidth="494.0" text="This program is free software: Selling this product is considered a deception you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version." wrapText="true">
+        <Label layoutX="17.0" layoutY="110.0" prefHeight="90.0" prefWidth="494.0" text="This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version." wrapText="true">
             <font>
                 <Font size="14.0" />
             </font>
@@ -29,8 +29,7 @@
                 <Font size="14.0" />
             </font>
         </Label>
-        <Hyperlink layoutX="125.0" layoutY="273.0" prefHeight="23.0" prefWidth="230.0" text="Mahmoud Khalil : khalil2535@yahoo.com" />
-        <Hyperlink layoutX="125.0" layoutY="293.0" prefHeight="23.0" prefWidth="251.0" text="Waleed Mortaja : waleed.mortaja@gmail.com" />
+        <Hyperlink layoutX="125.0" layoutY="273.0" prefHeight="23.0" prefWidth="230.0" text="Mahmoud Khalil : khalil2535@protonmail.com" />
         <Label layoutX="29.0" layoutY="222.0" text="project link on :">
             <font>
                 <Font size="14.0" />

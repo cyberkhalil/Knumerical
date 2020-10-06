@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Interfaces_and_Controllers.diophantine;
 
 import runningApplication.HelpingClass;
@@ -17,8 +12,6 @@ import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
- *
- * @author HP
  */
 public class DivisionAlgorithmController implements Initializable {
 

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Interfaces_and_Controllers.divisors;
 
 import runningApplication.HelpingClass;
@@ -52,17 +47,11 @@ public class AllDivisorsController implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText("You entered an invalid number");
             alert.showAndWait();
-        } catch (NullPointerException npe) {
+        } catch (NullPointerException | IllegalArgumentException ex) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Error");
             alert.setHeaderText(null);
-            alert.setContentText(npe.getMessage());
-            alert.showAndWait();
-        } catch (IllegalArgumentException ie) {
-            Alert alert = new Alert(AlertType.INFORMATION);
-            alert.setTitle("Error");
-            alert.setHeaderText(null);
-            alert.setContentText(ie.getMessage());
+            alert.setContentText(ex.getMessage());
             alert.showAndWait();
         }
 

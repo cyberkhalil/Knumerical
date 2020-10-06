@@ -36,42 +36,38 @@ public class SolveDiophantineController implements Initializable {
             Long input2 = HelpingClass.input2Long(Input2);
             Long input3 = HelpingClass.input2Long(Input3);
             long[] array = numberTheory.NumberTheoryUtil.diophantineSolve(input1, input2, input3);
-            {
-                if (array[1] == 0) {
-                    output1.setText(array[0] + "");
-                } else if (array[1] == 1) {
-                    if (array[0] == 0 && Long.signum(array[1]) == 1 /* 1 means positive*/) {
-                        output1.setText(" t ");
-                    } else if (array[0] == 0) {
-                        output1.setText(array[1] + " t ");
-                    } else {
-                        output1.setText(array[0] + String.format(Locale.UK, " %+d", array[1]) + " t ");
-                    }
+            if (array[1] == 0) {
+                output1.setText(array[0] + "");
+            } else if (array[1] == 1) {
+                if (array[0] == 0 && Long.signum(array[1]) == 1 /* 1 means positive*/) {
+                    output1.setText(" t ");
+                } else if (array[0] == 0) {
+                    output1.setText(array[1] + " t ");
                 } else {
-                    if (array[0] == 0) {
-                        output1.setText(array[1] + " t");
-                    } else {
-                        output1.setText(array[0] + String.format(Locale.UK, " %+d", array[1]) + " t");
-                    }
+                    output1.setText(array[0] + String.format(Locale.UK, " %+d", array[1]) + " t ");
+                }
+            } else {
+                if (array[0] == 0) {
+                    output1.setText(array[1] + " t");
+                } else {
+                    output1.setText(array[0] + String.format(Locale.UK, " %+d", array[1]) + " t");
                 }
             }
-            {
-                if (array[3] == 0) {
-                    output2.setText(array[2] + "");
-                } else if (array[3] == 1) {
-                    if (array[2] == 2 && Long.signum(array[3]) == 1 /* 1 means positive*/) {
-                        output2.setText(" t ");
-                    } else if (array[2] == 0) {
-                        output2.setText(array[3] + " t ");
-                    } else {
-                        output2.setText(array[2] + String.format(Locale.UK, " %+d", array[3]) + " t ");
-                    }
+            if (array[3] == 0) {
+                output2.setText(array[2] + "");
+            } else if (array[3] == 1) {
+                if (array[2] == 2 && Long.signum(array[3]) == 1 /* 1 means positive*/) {
+                    output2.setText(" t ");
+                } else if (array[2] == 0) {
+                    output2.setText(array[3] + " t ");
                 } else {
-                    if (array[2] == 0) {
-                        output2.setText(array[3] + " t");
-                    } else {
-                        output2.setText(array[2] + String.format(Locale.UK, " %+d", array[3]) + " t");
-                    }
+                    output2.setText(array[2] + String.format(Locale.UK, " %+d", array[3]) + " t ");
+                }
+            } else {
+                if (array[2] == 0) {
+                    output2.setText(array[3] + " t");
+                } else {
+                    output2.setText(array[2] + String.format(Locale.UK, " %+d", array[3]) + " t");
                 }
             }
         } catch (NumberFormatException nfe) {

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Interfaces_and_Controllers.main_Interfaces;
 
 import runningApplication.NumberTheoryApplication;
@@ -16,8 +11,6 @@ import javafx.scene.control.Alert;
 
 /**
  * FXML Controller class
- *
- * @author HP
  */
 public class AboutFXMLController implements Initializable {
 
@@ -29,7 +22,7 @@ public class AboutFXMLController implements Initializable {
     @FXML
     private void handleopengithublink(ActionEvent event) {
         try {
-            java.awt.Desktop.getDesktop().browse(java.net.URI.create("https://github.com/WaleedMortaja/Elementary-Number-Theory"));
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create("https://github.com/khalil2535/Knumerical"));
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Error");

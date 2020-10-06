@@ -1,19 +1,11 @@
 package runningApplication;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 import java.util.ArrayList;
+import java.util.Arrays;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import static numberTheory.NumberTheoryUtil.strPow;
 
-/**
- *
- * @author HP
- */
 public class HelpingClass {
 
     public static Long input2Long(TextField tf) {
@@ -47,7 +39,7 @@ public class HelpingClass {
                     result.get(i)[j] = strPow(inputs[j]);
                 }
             } catch (NumberFormatException ex) {
-                throw new NumberFormatException("Invaild Number (" + inputs + ")");
+                throw new NumberFormatException("Invaild Number (" + Arrays.toString(inputs) + ")");
             }
         }
         return result;

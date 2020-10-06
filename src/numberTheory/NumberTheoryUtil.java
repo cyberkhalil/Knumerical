@@ -18,7 +18,6 @@ package numberTheory;
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Implementation for some methods used in Elementary Number Theory.
@@ -26,12 +25,12 @@ import java.util.List;
  * @author Waleed Mortaja, contact Email :
  * <a href="mailto:waleed.mortaja@gmail.com">waleed.mortaja@gmail.com</a>
  * @author Mahmoud Khalil, contact Email :
- * <a href="mailto:kkhalil2535@gmail.com">kkhalil2535@gmail.com</a>
+ * <a href="mailto:khalil2535@protonmail.com">khalil2535@protonmail.com</a>
  */
 public class NumberTheoryUtil {
 
     /**
-     * Get the unique represntation for two numbers as
+     * Get the unique representation for two numbers as
      *
      * multiple = quotient * factor + reminder where remainder is the positive
      * reminder less than |b|.
@@ -62,8 +61,8 @@ public class NumberTheoryUtil {
     }
 
     /**
-     * Calculate the gcd (Greates Common Divisor) of two numbers. Find gcd using
-     * Euclidean Algorithm
+     * Calculate the gcd (Greatest Common Divisor) of two numbers. Find gcd
+     * using Euclidean Algorithm
      *
      * @param a The first number.
      * @param b The second number.
@@ -372,13 +371,13 @@ public class NumberTheoryUtil {
     }
 
     /**
-     * Find the incongurent solutions for the linear congurent. Linear congurent
+     * Find the incongruent solutions for the linear congruent. Linear congruent
      * equation has the form: a * x ≡ c (mod n)
      *
      * @param a the coefficient of x
      * @param b the remainder
      * @param n the mod number
-     * @return ArrayList of the incongurent solutions
+     * @return ArrayList of the incongruent solutions
      */
     public static ArrayList<Long> linearCongurentSolve(long a, long b, long n) {
         check_n_mod(n);
@@ -451,7 +450,7 @@ public class NumberTheoryUtil {
      *
      *
      * @param equations
-     * @return long[] for chinses Remainder Solve
+     * @return long[] for Chinese Remainder Solve
      */
     public static long[] chineseRemainderSolve(ArrayList<Long[]> equations) throws IllegalArgumentException {
         chineseRemainderEquationCheck(equations);
@@ -549,9 +548,9 @@ public class NumberTheoryUtil {
     /**
      *
      * @param n the input number to get the numbers between 1 and it (inclusive)
-     * and that are relativly primes to it.
+     * and that are relatively primes to it.
      * @return the numbers between 1 and <code>n</code> (inclusive) and that are
-     * relativly primes to <code>n</code>
+     * relatively primes to <code>n</code>
      */
     public static ArrayList<Long> relativlyPrimes(long n) {
         check_n_mod(n);
@@ -753,10 +752,4 @@ public class NumberTheoryUtil {
     private NumberTheoryUtil() {
     }
 
-    private <T> void checkArrayLength(int length, List<T> array) throws IllegalArgumentException {
-        final int arraySize = array.size();
-        if (length != arraySize) {
-            throw new IllegalArgumentException("Array length must be " + length + " , found array with length: " + arraySize);
-        }
-    }
 }

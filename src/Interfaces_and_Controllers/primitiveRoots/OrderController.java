@@ -12,8 +12,6 @@ import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
- *
- * @author HP
  */
 public class OrderController implements Initializable {
 

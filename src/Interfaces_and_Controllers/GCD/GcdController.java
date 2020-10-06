@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Interfaces_and_Controllers.GCD;
 
 import runningApplication.HelpingClass;
@@ -38,7 +33,7 @@ public class GcdController implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText("You entered an invalid number");
             alert.showAndWait();
-        }  catch (Exception ex) {
+        } catch (Exception ex) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Error");
             alert.setHeaderText(null);
