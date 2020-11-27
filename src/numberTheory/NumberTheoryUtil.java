@@ -715,7 +715,7 @@ public class NumberTheoryUtil {
         } // Not a letter
         int offset = ch - base + key;
         final int LETTERS = 26; // Number of letters in the Roman alphabet
-        if (offset > LETTERS) {
+        if (offset >= LETTERS) {
             offset -= LETTERS;
         } else if (offset < 0) {
             offset += LETTERS;
